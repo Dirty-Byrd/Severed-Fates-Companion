@@ -9,6 +9,79 @@
     position: fixed;
 }
 
+.pagecontent
+{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 112px);
+    width: calc(100vw - 240px);
+    padding: 30px;
+}
+
+.welcome
+{
+    background-color: rgb(38, 38, 38);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.news
+{
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 240px);
+}
+
+.announcements
+{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 6px;
+    flex-grow: 1;
+    font-size: larger;
+}
+
+.updates
+{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 6px;
+    flex-grow: 1;
+    font-size: larger;
+}
+
+.updates a:link
+{
+    color: indianred;
+    text-decoration: none;
+}
+
+.updates a:active
+{
+    color: darkred;
+}
+
+.socials
+{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 6px;
+    flex-grow: 1;
+    font-size: larger;
+}
+
+.socials a:link
+{
+    color: indianred;
+    text-decoration: none;
+}
+
 .postcontainer
 {
     display: flex;
@@ -85,9 +158,8 @@ header span
     color: rgb(205, 205, 205);
     overflow-y: auto;
     height: calc(100vh - 52px);
-    margin-left: 180px;
-    padding-left: 30px;
-    padding-right: 30px;
+    left: 180px;
+    position: fixed;
 }
 
 
@@ -96,7 +168,7 @@ nav
     border-right: 1px rgb(85, 85, 85) solid;
     border-bottom: 1px rgb(85, 85, 85) solid;
     margin-left: 0px;
-    background-color: rgb(38, 38, 38);  
+    background-color: rgb(38, 38, 38);
     color: rgb(205, 205, 205);
     position: fixed;
     display: block;
@@ -104,6 +176,7 @@ nav
     height: calc(100vh - 52px);
     width: 180px;
     margin-bottom: 100px;
+    z-index: 10000;
 }
 
 nav a
@@ -182,6 +255,12 @@ nav a:active
     {
         display: inline-block;
     }
+
+    .news
+    {
+        flex-direction: column;
+        width: auto;
+    }
 }
 
 @media screen and (max-width:800px)
@@ -229,9 +308,11 @@ nav a:active
     .pagecontent, .maincontent
     {
         margin-top: 18px;
-        overflow-y: hidden;
+        position: fixed;
+        left: 0px;
+        overflow-y: scroll;
         width: auto;
-        height: auto;
+        height: calc(100vh - 52px);
         margin-left: 0px;
     }
 }
@@ -243,15 +324,6 @@ nav a:active
         border-right: 0px;
         padding-left: 24px;
         font-size: 24px;
-    }
-}
-
-@media screen and (max-width:800px)
-{
-    .postcontainer
-    {
-        //flex-direction: column;
-        //align-items: left;
     }
 }
 
