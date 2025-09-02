@@ -307,12 +307,12 @@ nav a:active
 {
     .pagecontent, .maincontent
     {
-        margin-top: 18px;
         position: fixed;
-        top: 35px;
+        top: 53px;
         left: 0px;
         overflow-y: scroll;
         width: auto;
+        height: auto;
         bottom: env(safe-area-inset-bottom);
         margin-left: 0px;
     }
