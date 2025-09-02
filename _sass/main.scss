@@ -1,3 +1,8 @@
+h1
+{
+    margin-top: 0px;
+}
+
 .defaultcontainer 
 {
     display: flex;
@@ -9,13 +14,12 @@
     position: fixed;
 }
 
-.pagecontent
+.homepagecontent
 {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 112px);
     width: calc(100vw - 240px);
-    padding: 30px;
 }
 
 .welcome
@@ -160,6 +164,8 @@ header span
     height: calc(100vh - 52px);
     left: 180px;
     position: fixed;
+    align-self: stretch;
+    padding: 30px;
 }
 
 
@@ -305,7 +311,7 @@ nav a:active
 
 @media screen and (max-width:800px)
 {
-    .pagecontent, .maincontent
+    .homepagecontent, .maincontent
     {
         position: fixed;
         top: 53px;
@@ -315,6 +321,7 @@ nav a:active
         height: auto;
         bottom: env(safe-area-inset-bottom);
         margin-left: 0px;
+        padding: 30px;
     }
 }
 @media screen and (max-width:800px)
