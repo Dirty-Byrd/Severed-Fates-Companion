@@ -313,7 +313,7 @@ nav a:active
         left: 0px;
         overflow-y: scroll;
         width: auto;
-        height: calc(100dvh - 113px);
+        bottom: env(safe-area-inset-bottom);
         margin-left: 0px;
     }
 }
