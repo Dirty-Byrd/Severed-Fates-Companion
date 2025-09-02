@@ -309,10 +309,11 @@ nav a:active
     {
         margin-top: 18px;
         position: fixed;
+        top: 35px;
         left: 0px;
         overflow-y: scroll;
         width: auto;
-        height: calc(100vh - 52px);
+        height: calc(100vh - 113px);
         margin-left: 0px;
     }
 }
